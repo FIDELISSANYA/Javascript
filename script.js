@@ -10,3 +10,12 @@ function submitForm(){
             document.getElementById("demo").innerHTML=InputAccepted; 
         }
     }
+    function fuctionMonth(){
+        const inpDay=document.getElementById("id1");
+        if(!inpDay.checkValidity()) {
+            document.getElementById("demo1").innerHTML=inpDay.validationMessage;
+        }
+        else{
+            document.getElementById("demo1").innerHTML=InputGranted; 
+        }
+    }
